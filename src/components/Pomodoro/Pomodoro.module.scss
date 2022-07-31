@@ -1,0 +1,137 @@
+@import "Variables.module";
+
+.PomodoroContainer {
+  background: #fff;
+  color: map-get($colors, "text");
+  padding-top: 0;
+  max-width: 22rem;
+  margin: 0 auto;
+  text-align: center;
+
+  & .Heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #{map-get($colors, "text")};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    & .HeadingSvg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  & .HeadingInfo {
+    width: 80vh;
+    position: absolute;
+    z-index: 1000;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    background: white;
+    padding: 0.5rem 1rem;
+    border: 1px solid #757582;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    
+    
+    & p {
+      font-size: 1rem;
+      color: #{map-get($colors, "text")};
+    }
+  }
+
+  & .slider {
+    height: 2.5rem;
+    width: 100%;
+    margin: 0 auto;
+    border: $blue-border;
+    border-radius: 1.25rem;
+    margin-bottom: 3rem;
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
+  }
+
+  & .sliderLimits {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    justify-content: space-between;
+  }
+
+  & .slider.green {
+    border: $green-border;
+    margin-bottom: 0;
+  }
+
+  & .slider.green .thumb {
+    background: #{map-get($colors, "break-accent")};
+  }
+
+  & .thumb {
+    background: #{map-get($colors, "accent")};
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+
+  & button {
+    background: transparent;
+    color: #757582;
+    border: 0;
+    display: inline-block;
+    width: 6rem;
+    cursor: pointer;
+  }
+
+  & button.withText {
+    width: auto;
+    margin-top: 2rem;
+    color: white;
+    background: #{map-get($colors, "accent")};
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.625rem;
+    font-size: 1.2rem;
+    line-height: 2.25rem;
+    -webkit-border-radius: 0.625rem;
+    -moz-border-radius: 0.625rem;
+    -ms-border-radius: 0.625rem;
+    -o-border-radius: 0.625rem;
+  }
+
+  & button.withText svg {
+    width: 2.25rem;
+    float: left;
+    margin-right: 0.4rem;
+  }
+
+  & p {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    text-transform: capitalize;
+  }
+}

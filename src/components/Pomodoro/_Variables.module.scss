@@ -1,0 +1,3 @@
+$colors : ('accent':"#308DFD", 'break-accent':"#00AA5A", "text":"#757582");
+$blue-border: 2px solid #{map-get($colors, "accent")};
+$green-border: 2px solid #{map-get($colors, "break-accent")};
