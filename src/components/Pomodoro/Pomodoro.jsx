@@ -17,8 +17,7 @@ const Pomodoro = () => {
         Pomodoro{" "}
         <p
           className={styles.HeadingSvg}
-          onMouseEnter={() => setShowInfo(true)}
-          onMouseLeave={() => setShowInfo(false)}
+          onClick={() => setShowInfo(!showInfo)}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +37,7 @@ const Pomodoro = () => {
           <p>
             <blockquote>
               The Pomodoro Technique is a time management method for students,
-              perfectionists, and procrastinators of all kinds. Work in focused,
+              perfectionists, and procrastinators of all kinds. <br/> Work in focused,
               25-minute intervals.
             </blockquote>
           </p>
