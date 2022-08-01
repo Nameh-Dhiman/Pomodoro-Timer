@@ -48,6 +48,7 @@
     & p {
       font-size: 1rem;
       text-transform:none;
+      text-align:justify;
       color: #{map-get($colors, "text")};
     }
   }
